@@ -2786,13 +2786,13 @@
         for (var y = 1; y <= opts.rows; y++) {
             styles += (opts.namespace + ' [data-sizey="' + y + '"] { height:' +
                 (y * opts.widget_base_dimensions[1] +
-                (y - 1) * (opts.widget_margins[1] * 2)) + 'px; }\n');
+                (opts.widget_margins[1] * 2)) + 'px; }\n');
         }
 
         for (var x = 1; x <= max_size_x; x++) {
             styles += (opts.namespace + ' [data-sizex="' + x + '"] { width:' +
                 (x * opts.widget_base_dimensions[0] +
-                (x - 1) * (opts.widget_margins[0] * 2)) + 'px; }\n');
+                (opts.widget_margins[0] * 2)) + 'px; }\n');
         }
 
         return this.add_style_tag(styles);
